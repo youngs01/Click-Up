@@ -1,0 +1,107 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.fs-10{
+    font-size: 12px;
+}
+
+p{
+    margin: 0px !important;
+}
+
+.bg-purple{
+    background-color: #7B68EE;
+}
+
+.fs-16{
+    font-size: 15px;
+}
+.fw-900{
+    font-weight: 900;
+}
+
+.fs-70{
+    font-size: 70px;
+}
+
+.hover:hover{
+    transform: scaleY(0.90);
+}
+
+.noshadow:hover{
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+.transition5s{
+    transition: all ease 0.5s;
+}
+
+#productContent{
+    display: none;
+}
+
+.bg-attachment{
+    background-clip: text !important;
+    color: transparent;
+}
+
+.product-btn-content{
+top: 70px;
+}
+
+.primary-hover:hover{
+    color: #7B68EE !important;
+}
+
+.pt-100{
+    padding-top: 100px;
+}
+
+.hero-section h1{
+background: linear-gradient(to right,#3F7BFA,#432998,#BE12EE,#5E1A94,#2C2052);
+font-family:Arial, Helvetica, sans-serif;
+}
+
+.hero-section .hero-btn {
+    letter-spacing: 0.5px;
+background: linear-gradient(to right ,#50A0FA,#722DFE,#C00AF1);
+}
+
+.hero-section .fa-star{
+    font-size: 14px;
+}
+
+
+
+
+
+
+@media screen and (max-width:1200px) {
+    .nav-group-btn{
+        align-items: start !important;
+    }
+}
+
+@media screen and (max-width:769px) {
+    .nav-group-btn div,
+    .nav-group-btn div a {
+        width: 100%;
+    }
+
+    .fs-70{
+        font-size: 50px;
+    }
+
+    .hero-section p{
+font-size: 18px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .fs-70{
+        font-size:40px;
+    }
+}
