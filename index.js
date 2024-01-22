@@ -11,13 +11,12 @@ function SwiperInitializer() {
   }  
 
   else if (window.innerWidth <= 769) {
-    swiperNumber = 3.7;
+    swiperNumber = 3.4;
   }
 
   else  if (window.innerWidth <= 990) {
-    swiperNumber = 5.7;
+    swiperNumber = 4.3;
   }  
-
   else {
     swiperNumber = 8;
   }
@@ -76,6 +75,37 @@ document.addEventListener("click", function(event) {
   if (!event.target.closest(".mySwiper4") && event.target.id !== "swipeButton") {
     swiper2.allowTouchMove = false;
   }
+});
+
+var cardSliderView;
+
+function cardSlider() {
+  if (window.innerWidth <= 500) {
+    cardSliderView = 1.1;
+  }
+  else if (window.innerWidth <= 800) {
+    cardSliderView = 1.7;
+  }
+  else if (window.innerWidth <= 990) {
+    cardSliderView = 2.5;
+  } else {
+    cardSliderView = 3;
+  }
+
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: cardSliderView,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+}
+
+cardSlider();
+
+window.addEventListener('resize', function () {
+  cardSlider();
 });
 
 
