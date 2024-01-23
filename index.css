@@ -243,6 +243,29 @@ color: transparent !important;
     text-align: center;
 }
 
+.w-110{
+    width: 110px;
+}
+
+.bg-light-gray{
+    background-color: #F8F8FC;
+}
+
+.border-cards{
+    border: 1px solid #CECEEA;
+}
+
+.solution-btn{
+    background:linear-gradient(to right,#606AFC,#7C0CFF,#D90AED);
+}
+
+.overflow-card-responsive{
+    overflow-x: scroll;
+}
+
+
+
+
 
 @media screen and (max-width:1200px) {
     .nav-group-btn {
@@ -251,6 +274,12 @@ color: transparent !important;
     .brands-grid{
         overflow-x: scroll;
         grid-gap: 40px;
+    }
+}
+
+@media screen and (max-width:990px) {
+    .bg-gray-circle{
+        border-radius: 0% !important;
     }
 }
 
@@ -272,11 +301,6 @@ color: transparent !important;
     .collaborate-clickup{
      flex-direction: column;
     }
- 
-    .bg-gray-circle{
-        border-radius: 20% !important;
-    }
-
 }
 
 @media screen and (max-width:576px) {
@@ -289,6 +313,17 @@ color: transparent !important;
     .fs-20 {
         font-size: 16px;
     }
+
+    .card-responsive-perfect-fit svg{
+        width: 50px;
+        height: 50px;
+        }    
+}
+
+@media screen and (max-width:413px) {
+    .card-responsive-perfect-fit{
+        font-size: 15px !important;
+        }    
 }
 
 @media screen and (max-width:390px) {
@@ -305,4 +340,8 @@ color: transparent !important;
     .fs-60 {
         font-size: 30px;
     }
+
+    .card-responsive-perfect-fit{
+        font-size: 12px !important;
+        }    
 }

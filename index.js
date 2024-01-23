@@ -108,4 +108,18 @@ window.addEventListener('resize', function () {
   cardSlider();
 });
 
+   function toggleAccordion(accordionId) {
+        var accordion = document.getElementById(accordionId);
+        var isCollapsed = accordion.style.display === 'none' || accordion.style.display === '';
 
+        // Hide all accordions
+        var accordions = document.querySelectorAll('.accordion-body');
+        accordions.forEach(function (item) {
+            item.style.display = 'none';
+        });
+
+        // Show the clicked accordion if it was collapsed
+        if (isCollapsed) {
+            accordion.style.display = 'block';
+        }
+    }
