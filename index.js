@@ -11,13 +11,12 @@ function SwiperInitializer() {
   }  
 
   else if (window.innerWidth <= 769) {
-    swiperNumber = 3.7;
+    swiperNumber = 3.4;
   }
 
   else  if (window.innerWidth <= 990) {
-    swiperNumber = 5.7;
+    swiperNumber = 4.3;
   }  
-
   else {
     swiperNumber = 8;
   }
@@ -78,4 +77,49 @@ document.addEventListener("click", function(event) {
   }
 });
 
+var cardSliderView;
 
+function cardSlider() {
+  if (window.innerWidth <= 500) {
+    cardSliderView = 1.1;
+  }
+  else if (window.innerWidth <= 800) {
+    cardSliderView = 1.7;
+  }
+  else if (window.innerWidth <= 990) {
+    cardSliderView = 2.5;
+  } else {
+    cardSliderView = 3;
+  }
+
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: cardSliderView,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+}
+
+cardSlider();
+
+window.addEventListener('resize', function () {
+  cardSlider();
+});
+
+   function toggleAccordion(accordionId) {
+        var accordion = document.getElementById(accordionId);
+        var isCollapsed = accordion.style.display === 'none' || accordion.style.display === '';
+
+        // Hide all accordions
+        var accordions = document.querySelectorAll('.accordion-body');
+        accordions.forEach(function (item) {
+            item.style.display = 'none';
+        });
+
+        // Show the clicked accordion if it was collapsed
+        if (isCollapsed) {
+            accordion.style.display = 'block';
+        }
+    }
