@@ -1,0 +1,167 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width"/><meta name="next-head-count" content="2"/><script>
+            if (window.location.search.indexOf('noRedirect=true') !== -1) {
+              sessionStorage.setItem('noRedirect', true);
+            }
+
+            if (window.location.pathname === '/' && document.cookie.indexOf('cu-redirect-to-app=true;') > -1 && !sessionStorage.getItem('noRedirect')) {
+              window.location.replace('https://app.clickup.com?fromLanding=true');
+            }
+          </script><script id="analytics-js">
+          var writeKey = "lqak3fioWGWK6wyy0uUrsRyMDxdfDaUn";
+
+          if (window.location.hostname === 'clickup.com' || window.location.hostname === 'www.clickup.com') {
+            writeKey = "1jee08ClTXJYjnSCN6OoV3mNPyxRsDSu"
+          }
+
+          !function () {
+            var analytics = window.analytics = window.analytics || []; if (!analytics.initialize) if (analytics.invoked) window.console && console.error && console.error("Segment snippet included twice."); else {
+              analytics.invoked = !0; analytics.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify", "reset", "group", "track", "ready", "alias", "debug", "page", "once", "off", "on", "addSourceMiddleware", "addIntegrationMiddleware", "setAnonymousId", "addDestinationMiddleware"]; analytics.factory = function (e) { return function () { var t = Array.prototype.slice.call(arguments); t.unshift(e); analytics.push(t); return analytics } }; for (var e = 0; e < analytics.methods.length; e++) { var key = analytics.methods[e]; analytics[key] = analytics.factory(key) } analytics.load = function (key, e) { var t = document.createElement("script"); t.type = "text/javascript"; t.async = !0; t.src = "https://data.web.clickup.com/analytics.js/v1/" + key + "/analytics.min.js"; var n = document.getElementsByTagName("script")[0]; n.parentNode.insertBefore(t, n); analytics._loadOptions = e }; analytics._writeKey = writeKey;; analytics.SNIPPET_VERSION = "4.15.3";
+              analytics.load(writeKey, { integrations: { "Segment.io": { apiHost: "io.web.clickup.com/v1" }}});
+            }
+          }();
+          </script><script id="growthbook-helpers">
+            const growthbookHelpers = {
+              getCookie: function(cookieName) { return document.cookie.split(';').some(c => { return c.trim().startsWith(cookieName + '='); })},
+              deleteCookie: function (cookieName) { if (window.growthbookHelpers.getCookie(cookieName)) { document.cookie = cookieName + "=" + ";path=/" + (window.location.host.includes("clickup.com") ? ";domain=.clickup.com;" : "") + ";expires=Thu, 01 Jan 1970 00:00:01 GMT" } else { console.error("ERROR::growthbookHelper.deleteCookie: cookie does not exist", cookieName)}},
+              setCookie: function(cookieName, cookieValue, expiresInDays) {
+                try {
+                  const date = new Date();
+                  date.setTime(date.getTime() + expiresInDays * 24 * 60 * 60 * 1000);
+                  const expires = "expires=" + date.toUTCString();
+                  const domain = window.location.host.includes("clickup.com") ? "domain=.clickup.com;" : "";
+                  document.cookie = cookieName + "=" + cookieValue + ";" + domain + expires + ";path=/";
+                } catch (e) {
+                  console.error("ERROR::growthbookHelper.setCookie: could not set cookie", e);
+                }
+              },
+              redirect: function(url, experimentId, variantId) {
+                window.growthbookHelpers.setCookie("cuGBId", experimentId, 7);
+                window.growthbookHelpers.setCookie("cuGBVariant", variantId, 7);
+                window.location.href = url + window.location.search;
+              }
+            }
+            window.growthbookHelpers = growthbookHelpers;
+          </script><script id="getCookieValue">
+          const getCookieValueWindow = (cookieName) => {
+            try {
+              if (!cookieName) {
+                console.log("ERROR.COOKIE.NOTPROVIDED", cookieName);
+                return false;
+              }
+          
+              const allCookies = document.cookie.split(";");
+          
+              const cookieIndex = allCookies.findIndex((keyPair) =>
+                keyPair.includes(cookieName + '=')
+              );
+            
+              if (cookieIndex === -1) {
+                console.log("ERROR.COOKIE.NOTFOUND", cookieName);
+                return null;
+              }
+          
+              return allCookies[cookieIndex].split("=")[1];
+            } catch (e) {
+              console.error("ERROR.COOKIE:", e);
+            }
+          };
+          </script><script id="analytics-w-session-data">
+          try {
+            var ajsAnonId = getCookieValueWindow('ajs_anonymous_id');
+            if (!ajsAnonId) {
+              window.analytics.setAnonymousId(window.crypto.randomUUID());
+            }
+          } catch (err) {
+            window?.DD_RUM.onReady(function () {
+              window?.DD_RUM.addError(err, { error: { message: "error in CuScript window.analytics.setAnonymousId()" } });
+            });
+            console.error("error retrieve ajsAnonId:", err);
+          }
+          window.analytics.page();
+          window.analytics.identify();
+          (function() {
+            window.addEventListener("load", function(event) {
+              for (index in window.dataLayer) {
+                var item = window.dataLayer[index];
+                if (item["event"] === "gtagGet") {
+                  var result = item.gtagResult;
+                  window.analytics.identify({
+                    clientId: result.clientId || "",
+                    sessionId: result.sessionId || "",
+                    sessionNum: result.sessionNum || "",
+                  });
+                }
+              }
+            });
+          })();
+          </script><script async="" data-gtm-gtag="true" src="https://www.googletagmanager.com/gtag/js?id=AW-617640813"></script><script data-gtag-config="true">
+          window.dataLayer = window.dataLayer || [];
+          function gtag() { dataLayer.push(arguments); }
+          gtag('js', new Date());
+          gtag('config', 'AW-617640813');
+          </script><script id="fullstory-sampling">
+          (function () {
+            'use strict';
+            
+            function sampleCookie() {
+                var rate = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 10;
+                var days = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 30;
+                var cookieName = '_fs_sample_user';
+                var date = new Date();
+                date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+        
+                // Check for the fullstory=false URL parameter using regex
+                var fullstoryParam = window.location.search.match(/[?&]fullstory=(true|false)/);
+                if (fullstoryParam) {
+                  document.cookie = cookieName + '=' + fullstoryParam[1] + '; expires=' + date.toGMTString() + '; path=/';
+                  return fullstoryParam[1] === 'true';
+                }
+        
+                try {
+                  if (document.cookie.indexOf(cookieName + '=true') > -1 || document.cookie.indexOf(cookieName + '=false') > -1) {
+                    return document.cookie.indexOf(cookieName + '=true') > -1;
+                  } else {
+                    var shouldSample = Math.random() < rate / 100;
+                    document.cookie = cookieName + '=' + shouldSample + '; expires=' + date.toGMTString() + '; path=/';
+                    return shouldSample;
+                  }
+                } catch (err) {
+                  console.error('FullStory not loaded, unable to sample user');
+                  return false;
+                }
+            }
+            
+            var rate = 50;
+            var days = 90;
+            if (sampleCookie(rate, days)) {
+              window['_fs_debug'] = false;
+              window['_fs_host'] = 'fullstory.com';
+              window['_fs_script'] = 'edge.fullstory.com/s/fs.js';
+              window['_fs_org'] = '32EW9';
+              window['_fs_namespace'] = 'FS';
+              (function(m,n,e,t,l,o,g,y){
+                  if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+                  g=m[e]=function(a,b,s){g.q?g.q.push([a,b,s]):g._api(a,b,s);};g.q=[];
+                  o=n.createElement(t);o.async=1;o.crossOrigin='anonymous';o.src='https://'+_fs_script;
+                  y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+                  g.identify=function(i,v,s){g(l,{uid:i},s);if(v)g(l,v,s)};g.setUserVars=function(v,s){g(l,v,s)};g.event=function(i,v,s){g('event',{n:i,p:v},s)};
+                  g.anonymize=function(){g.identify(!!0)};
+                  g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+                  g.log = function(a,b){g("log",[a,b])};
+                  g.consent=function(a){g("consent",!arguments.length||a)};
+                  g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+                  g.clearUserCookie=function(){};
+                  g.setVars=function(n, p){g('setVars',[n,p]);};
+                  g._w={};y='XMLHttpRequest';g._w[y]=m[y];y='fetch';g._w[y]=m[y];
+                  if(m[y])m[y]=function(){return g._w[y].apply(this,arguments)};
+                  g._v="1.3.0";
+              })(window,document,window['_fs_namespace'],'script','user');
+            } else {
+                //override the full story namespace
+                window['_fs_namespace'] = 'FS';
+            }
+            }());  
+          </script><link rel="preload" href="/_next/static/css/de43343902b76ce7.css" as="style"/><link rel="stylesheet" href="/_next/static/css/de43343902b76ce7.css" data-n-g=""/><link rel="preload" href="/_next/static/css/040668997b87e8c6.css" as="style"/><link rel="stylesheet" href="/_next/static/css/040668997b87e8c6.css" data-n-p=""/><link rel="preload" href="/_next/static/css/7bd1968af7c79567.css" as="style"/><link rel="stylesheet" href="/_next/static/css/7bd1968af7c79567.css" data-n-p=""/><link rel="preload" href="/_next/static/css/960fb63dd9043e66.css" as="style"/><link rel="stylesheet" href="/_next/static/css/960fb63dd9043e66.css" data-n-p=""/><link rel="preload" href="/_next/static/css/057aab82c642e989.css" as="style"/><link rel="stylesheet" href="/_next/static/css/057aab82c642e989.css" data-n-p=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-5cd94c89d3acac5f.js"></script><script src="/_next/static/chunks/webpack-7d54858bc7e4a03c.js" defer=""></script><script src="/_next/static/chunks/main-3368e1cfcab8612b.js" defer=""></script><script src="/_next/static/chunks/pages/_app-3f52d18edc82864a.js" defer=""></script><script src="/_next/static/chunks/8112-691674ed74ed5d04.js" defer=""></script><script src="/_next/static/chunks/7181-40aacb6e5798cddd.js" defer=""></script><script src="/_next/static/chunks/8629-531308033e7280d1.js" defer=""></script><script src="/_next/static/chunks/3050-5ed3f5d038006bb8.js" defer=""></script><script src="/_next/static/chunks/3026-5860c2f779124816.js" defer=""></script><script src="/_next/static/chunks/6414-63788bed6359bfc8.js" defer=""></script><script src="/_next/static/chunks/4116-beade1ac0491f68f.js" defer=""></script><script src="/_next/static/chunks/9656-d0fa1cb15de7ec9e.js" defer=""></script><script src="/_next/static/chunks/pages/index-561cd159ddaca59c.js" defer=""></script><script src="/_next/static/e_-Jcdt9sJ1_9gnkR4Nzs/_buildManifest.js" defer=""></script><script src="/_next/static/e_-Jcdt9sJ1_9gnkR4Nzs/_ssgManifest.js" defer=""></script><script src="/_next/static/e_-Jcdt9sJ1_9gnkR4Nzs/_middlewareManifest.js" defer=""></script></head><body><div id="__next" data-reactroot=""><div class="visuallyHidden" data-testid="local-feature-flag-override" data-overridden-flags=""></div><div></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{}},"page":"/","query":{},"buildId":"e_-Jcdt9sJ1_9gnkR4Nzs","nextExport":true,"autoExport":true,"isFallback":false,"scriptLoader":[]}</script><script data-testid="container-query-polyfill" type="module">
+            const supportsContainerQueries = "container" in document.documentElement.style;
+            if (!supportsContainerQueries) import("/polyfills/container-query-polyfill.modern.js");
+          </script></body></html>
