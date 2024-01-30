@@ -77,7 +77,7 @@ document.addEventListener("click", function (event) {
   }
 });
 
-var cardSliderView;
+
 
 function cardSlider() {
   if (window.innerWidth <= 500) {
@@ -91,7 +91,6 @@ function cardSlider() {
   } else {
     cardSliderView = 3;
   }
-
   var swiper = new Swiper(".mySwiper", {
     slidesPerView: cardSliderView,
     spaceBetween: 30,
@@ -101,23 +100,11 @@ function cardSlider() {
     },
   });
 }
-
 cardSlider();
-
 window.addEventListener('resize', function () {
   cardSlider();
 });
 
-
-
-var swiper = new Swiper(".mySwiperPerfectFit", {
-  slidesPerView: 1.2,
-  spaceBetween: 5,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
 
 
 
