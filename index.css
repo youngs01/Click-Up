@@ -86,12 +86,10 @@ p {
 }
 
 .hero-section h1 {
-  background: linear-gradient(
-    80deg,
-    #45c4f9 14.49%,
-    rgba(137, 32, 254, 0.81) 48.2%,
-    #ff0be5 94.81%
-  );
+  background: linear-gradient(80deg,
+      #45c4f9 14.49%,
+      rgba(137, 32, 254, 0.81) 48.2%,
+      #ff0be5 94.81%);
 }
 
 .hero-section .hero-btn {
@@ -147,14 +145,12 @@ p {
 
 .section-2 .heading {
   width: fit-content;
-  background: linear-gradient(
-    to right,
-    #3788fa,
-    #4f56f0,
-    #701ffa,
-    #a512f2,
-    #ca12eb
-  );
+  background: linear-gradient(to right,
+      #3788fa,
+      #4f56f0,
+      #701ffa,
+      #a512f2,
+      #ca12eb);
 }
 
 .swiper-slide {
@@ -170,23 +166,18 @@ p {
 
 .mySwiper3 .swiper-slide-thumb-active .accordion-heading {
   opacity: 1;
-  background: linear-gradient(
-    to right,
-    #21b2fa,
-    #4274fa,
-    #5c42fa,
-    #9812f4,
-    #dd12e8
-  ) !important;
+  background: linear-gradient(to right,
+      #21b2fa,
+      #4274fa,
+      #5c42fa,
+      #9812f4,
+      #dd12e8) !important;
   background-clip: text !important;
   color: transparent !important;
 }
 
 .accordion-slider p {
   font-size: 18px;
-}
-
-.accordion-heading {
 }
 
 .bg-slider1-img {
@@ -215,15 +206,13 @@ p {
 
 .Perfect-fit-heading {
   width: fit-content;
-  background: linear-gradient(
-    to right,
-    #24223e 40%,
-    #1b7c9f,
-    #23b0fa,
-    #3985fa,
-    #5551fa,
-    #ba12ee
-  );
+  background: linear-gradient(to right,
+      #24223e 40%,
+      #1b7c9f,
+      #23b0fa,
+      #3985fa,
+      #5551fa,
+      #ba12ee);
 }
 
 .nav-links-tabs {
@@ -307,15 +296,13 @@ p {
 }
 
 .clickup-feeders h1 {
-  background: linear-gradient(
-    to right,
-    #24223e 35%,
-    #1c7192,
-    #25abfa,
-    #466ffa,
-    #6a28fa,
-    #c512ec
-  );
+  background: linear-gradient(to right,
+      #24223e 35%,
+      #1c7192,
+      #25abfa,
+      #466ffa,
+      #6a28fa,
+      #c512ec);
   width: fit-content;
 }
 
@@ -443,21 +430,66 @@ p {
   height: 100%;
 }
 
-.footer-bg {
-  height: 500px;
-  border: 10px solid black;
-  clip-path: polygon(0 23%, 100% 22%, 100% 100%, 80% 98%, 63% 100%, 30% 95%, 0 100%);
-  background: linear-gradient(50deg, #8230fe -5%, #52a3fa -2%, #db11ec, #ff41a4);
-  position: relative;
-  z-index: -1;
+.fs-13 {
+  font-size: 13px;
 }
 
+.fs-14 {
+  font-size: 14px
+}
 
+.footer-bg {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  border-radius: 0 10px 10px 0;
+  /* clip-path: polygon(0 7%, 100% 7%, 100% 100%, 0% 100%); */
+  clip-path: polygon(0 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 100% 99%, 99% 100%, 100% 100%, 100% 100%, 0 100%);
+
+  background: linear-gradient(50deg, #8230fe -5%, #52a3fa -2%, #db11ec, #ff41a4);
+}
+
+.footer-div .logo {
+  margin-top: -30px;
+  block-size: auto;
+  margin-left: -25px;
+}
+
+.footer-btn {
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.text-decoration-hover:hover {
+  text-decoration: underline !important;
+}
+
+.footer-div a {
+  width: fit-content;
+}
+
+.footer-btn-apple img {
+max-width: 120px;
+}
+
+.footer-play-store-btn img{
+max-width: 120px;
+}
 
 
 @media screen and (max-width: 1200px) {
   .nav-group-btn {
     align-items: start !important;
+  }
+
+  .footer-div .logo {
+    margin: 0 !important;
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+
   }
 
   .brands-grid {
@@ -472,16 +504,15 @@ p {
   }
 
   .gradient-heading-responsive {
-    background: linear-gradient(
-      80deg,
-      #45c4f9 14.49%,
-      rgba(137, 32, 254, 0.81) 48.2%,
-      #ff0be5 94.81%
-    );
+    background: linear-gradient(80deg,
+        #45c4f9 14.49%,
+        rgba(137, 32, 254, 0.81) 48.2%,
+        #ff0be5 94.81%);
   }
 }
 
 @media screen and (max-width: 769px) {
+
   .nav-group-btn div,
   .nav-group-btn div a {
     width: 100%;
@@ -499,9 +530,20 @@ p {
   .hero-section p {
     font-size: 18px;
   }
+
+  .footer-div img {
+    max-width: 100px;
+  }
+  
+  .footer-justify{
+justify-content: space-between!important;
+/* gap: 100px;   */
+}
+
 }
 
 @media screen and (max-width: 576px) {
+
   .fs-70,
   .fs-60 {
     font-size: 40px;
