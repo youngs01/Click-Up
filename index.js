@@ -108,19 +108,7 @@ window.addEventListener('resize', function () {
   cardSlider();
 });
 
-var mySwiper = new Swiper('.mySwiperSuperCharge', {
-  slidesPerView: 1.1,
-  spaceBetween: 10,
-  // Add other Swiper options as needed
-});
 
 
-var swiper = new Swiper(".mySwiperPerfectFit", {
-slidesPerView: 1.2,
-spaceBetween: 5,
-pagination: {
-el: ".swiper-pagination",
-clickable: true,
-},
-});
+
 
