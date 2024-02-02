@@ -56,6 +56,9 @@ var swiper1 = new Swiper(".mySwiper3", {
   freeMode: true,
 });
 
+
+
+
 var swiper2 = new Swiper(".mySwiper4", {
   spaceBetween: 100,
   allowTouchMove: false,  // Disable mouse/touch dragging
@@ -105,7 +108,19 @@ window.addEventListener('resize', function () {
   cardSlider();
 });
 
+var mySwiper = new Swiper('.mySwiperSuperCharge', {
+  slidesPerView: 1.1,
+  spaceBetween: 10,
+  // Add other Swiper options as needed
+});
 
 
-
+var swiper = new Swiper(".mySwiperPerfectFit", {
+slidesPerView: 1.2,
+spaceBetween: 5,
+pagination: {
+el: ".swiper-pagination",
+clickable: true,
+},
+});
 

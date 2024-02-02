@@ -17,101 +17,83 @@
 </head>
 
 <body>
-  <div class="container-fluid position-relative px-0">
-    <div class="container-fluid px-0 position-absolute product-btn-content bg-primary" id="">
-      <!-- <div class="container">
-            <div class="row py-4">
-                <div class="col-6 ">
-                    <div class="d-flex flex-column gap-3  bg-primary">
-                        <h6>PRODUCT</h6>
-                        <div class="d-flex align-items-center  justify-content-between">
+  <nav class="navbar sticky-top navbar-expand-xl py-4 border-bottom bg-white">
+    <div class="container position-relative">
+      <a class="navbar-brand" href="#">
+        <svg width="146" height="38" viewBox="0 0 146 38" fill="none" xmlns="http://www.w3.org/2000/svg"
+          aria-label="ClickUp" class="" data-testid="cu-logo">
+          <defs>
+            <linearGradient id="bottom-891" x1="5.61511" y1="31.179" x2="32.7893" y2="31.179"
+              gradientUnits="userSpaceOnUse">
+              <stop stop-color="#8930FD"></stop>
+              <stop offset="1" stop-color="#49CCF9"></stop>
+            </linearGradient>
+            <linearGradient id="top-891" x1="5.94116" y1="13.0864" x2="31.9781" y2="13.0864"
+              gradientUnits="userSpaceOnUse">
+              <stop stop-color="#FF02F0"></stop>
+              <stop offset="1" stop-color="#FFC800"></stop>
+            </linearGradient>
+          </defs>
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M5.61511 27.2592L10.6296 23.4086C13.2937 26.894 16.1242 28.5006 19.2749 28.5006C22.4086 28.5006 25.1591 26.913 27.7032 23.455L32.7893 27.2128C29.1185 32.1993 24.5568 34.8339 19.2749 34.8339C14.0098 34.8339 9.40387 32.2161 5.61511 27.2592Z"
+            fill="url(#bottom-891)"></path>
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M18.9923 10.5228L10.0669 18.2325L5.94116 13.4361L19.0112 2.14587L31.9781 13.4445L27.8334 18.2241L18.9923 10.5228Z"
+            fill="url(#top-891)"></path>
+          <path
+            d="M51.7539 30.0767C48.7065 30.0767 46.1666 29.0866 44.1069 27.1063C42.0472 25.0987 41.0321 22.5252 41.0321 19.3839C41.0321 16.2172 42.0746 13.6142 44.1343 11.577C46.2235 9.51234 48.7634 8.49478 51.7834 8.49478C55.509 8.49478 58.8092 10.1056 60.7299 12.6241L57.3707 16.1602C55.7617 14.4333 54.0116 13.5572 52.1225 13.5572C50.5135 13.5572 49.1867 14.0934 48.0852 15.1976C47.0132 16.3017 46.4783 17.6887 46.4783 19.3564C46.4783 20.9693 47.0132 22.3268 48.0852 23.4309C49.1867 24.5054 50.5135 25.0417 52.093 25.0417C54.1527 25.0417 55.9597 24.136 57.455 22.3542L60.9552 25.7214C59.9949 26.9944 58.6975 28.0416 57.0885 28.8607C55.4795 29.6819 53.702 30.0767 51.7539 30.0767ZM66.8753 8.18234V29.7663H61.9092V8.18234H66.8753ZM71.5823 12.7634C69.9185 12.7634 68.7054 11.5474 68.7054 9.87967C68.7054 8.26678 69.9754 7.05078 71.5823 7.05078C73.1913 7.05078 74.4338 8.26678 74.4338 9.87967C74.4338 11.5474 73.1913 12.7656 71.5823 12.7656V12.7634ZM74.0948 14.1504V29.7663H69.0993V14.1504H74.0948ZM83.6562 30.1062C81.2005 30.1062 79.2251 29.342 77.675 27.8136C76.1503 26.2872 75.3879 24.3344 75.3879 21.9299C75.3879 19.5253 76.1503 17.5747 77.7024 16.0462C79.2546 14.5178 81.2574 13.7557 83.7404 13.7557C86.9858 13.7557 89.8374 15.339 91.1621 18.3093L87.1838 20.4036C86.394 19.0736 85.2926 18.3938 83.8541 18.3938C82.8095 18.3938 81.9629 18.7337 81.2848 19.4134C80.963 19.7471 80.7101 20.1411 80.5406 20.573C80.3712 21.0048 80.2884 21.4659 80.297 21.9299C80.297 23.9946 81.7923 25.523 83.7973 25.523C85.2357 25.523 86.5625 24.7313 87.1269 23.5153L91.1073 25.8903C89.751 28.4933 86.9584 30.1062 83.6562 30.1062ZM108.429 29.7663H102.501L97.8993 23.5702L97.1664 24.25V29.7663H92.2025V8.18234H97.1685V18.6767L101.852 14.1504H107.92L101.233 20.431L108.429 29.7663ZM108.762 21.647V8.86H114.067V21.5626C114.067 23.9101 115.422 25.0417 117.37 25.0417C119.288 25.0417 120.642 23.8531 120.642 21.5626V8.86H125.977V21.647C125.977 27.8136 121.714 30.1337 117.37 30.1337C113.052 30.1337 108.762 27.8136 108.762 21.647ZM137.767 13.7557C139.997 13.7557 141.804 14.5473 143.242 16.1307C144.681 17.6866 145.386 19.6393 145.386 21.9299C145.386 24.2226 144.653 26.1732 143.215 27.7861C141.774 29.3694 139.969 30.1632 137.796 30.1632C136.073 30.1632 134.578 29.5974 133.365 28.4659V36.1883H128.369V14.1504H133.281V15.5944C134.494 14.3763 135.989 13.7557 137.767 13.7557ZM140.306 21.9869C140.306 19.9497 138.841 18.3938 136.808 18.3938C134.776 18.3938 133.281 19.9497 133.281 21.9869C133.281 22.977 133.618 23.8257 134.268 24.5329C134.944 25.2401 135.791 25.58 136.808 25.58C137.823 25.58 138.67 25.2401 139.319 24.5329C139.966 23.8452 140.321 22.9322 140.309 21.9869H140.306Z"
+            fill="#000"></path>
+        </svg>
+      </a>
 
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 ">
+      <div class="d-flex gap-3">
+        <a href="#/"
+          class="fw-bold px-3 py-2 rounded-3 text-dark text-decoration-none bg-body-secondary fs-16 shadow d-block d-xl-none shadow-hover">Login</a>
 
-                </div>
-            </div>
-        </div> -->
-    </div>
-    <nav class="navbar sticky-top navbar-expand-xl py-4 border-bottom">
-      <div class="container position-relative">
-        <a class="navbar-brand" href="#">
-          <svg width="146" height="38" viewBox="0 0 146 38" fill="none" xmlns="http://www.w3.org/2000/svg"
-            aria-label="ClickUp" class="" data-testid="cu-logo">
-            <defs>
-              <linearGradient id="bottom-891" x1="5.61511" y1="31.179" x2="32.7893" y2="31.179"
-                gradientUnits="userSpaceOnUse">
-                <stop stop-color="#8930FD"></stop>
-                <stop offset="1" stop-color="#49CCF9"></stop>
-              </linearGradient>
-              <linearGradient id="top-891" x1="5.94116" y1="13.0864" x2="31.9781" y2="13.0864"
-                gradientUnits="userSpaceOnUse">
-                <stop stop-color="#FF02F0"></stop>
-                <stop offset="1" stop-color="#FFC800"></stop>
-              </linearGradient>
-            </defs>
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M5.61511 27.2592L10.6296 23.4086C13.2937 26.894 16.1242 28.5006 19.2749 28.5006C22.4086 28.5006 25.1591 26.913 27.7032 23.455L32.7893 27.2128C29.1185 32.1993 24.5568 34.8339 19.2749 34.8339C14.0098 34.8339 9.40387 32.2161 5.61511 27.2592Z"
-              fill="url(#bottom-891)"></path>
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M18.9923 10.5228L10.0669 18.2325L5.94116 13.4361L19.0112 2.14587L31.9781 13.4445L27.8334 18.2241L18.9923 10.5228Z"
-              fill="url(#top-891)"></path>
-            <path
-              d="M51.7539 30.0767C48.7065 30.0767 46.1666 29.0866 44.1069 27.1063C42.0472 25.0987 41.0321 22.5252 41.0321 19.3839C41.0321 16.2172 42.0746 13.6142 44.1343 11.577C46.2235 9.51234 48.7634 8.49478 51.7834 8.49478C55.509 8.49478 58.8092 10.1056 60.7299 12.6241L57.3707 16.1602C55.7617 14.4333 54.0116 13.5572 52.1225 13.5572C50.5135 13.5572 49.1867 14.0934 48.0852 15.1976C47.0132 16.3017 46.4783 17.6887 46.4783 19.3564C46.4783 20.9693 47.0132 22.3268 48.0852 23.4309C49.1867 24.5054 50.5135 25.0417 52.093 25.0417C54.1527 25.0417 55.9597 24.136 57.455 22.3542L60.9552 25.7214C59.9949 26.9944 58.6975 28.0416 57.0885 28.8607C55.4795 29.6819 53.702 30.0767 51.7539 30.0767ZM66.8753 8.18234V29.7663H61.9092V8.18234H66.8753ZM71.5823 12.7634C69.9185 12.7634 68.7054 11.5474 68.7054 9.87967C68.7054 8.26678 69.9754 7.05078 71.5823 7.05078C73.1913 7.05078 74.4338 8.26678 74.4338 9.87967C74.4338 11.5474 73.1913 12.7656 71.5823 12.7656V12.7634ZM74.0948 14.1504V29.7663H69.0993V14.1504H74.0948ZM83.6562 30.1062C81.2005 30.1062 79.2251 29.342 77.675 27.8136C76.1503 26.2872 75.3879 24.3344 75.3879 21.9299C75.3879 19.5253 76.1503 17.5747 77.7024 16.0462C79.2546 14.5178 81.2574 13.7557 83.7404 13.7557C86.9858 13.7557 89.8374 15.339 91.1621 18.3093L87.1838 20.4036C86.394 19.0736 85.2926 18.3938 83.8541 18.3938C82.8095 18.3938 81.9629 18.7337 81.2848 19.4134C80.963 19.7471 80.7101 20.1411 80.5406 20.573C80.3712 21.0048 80.2884 21.4659 80.297 21.9299C80.297 23.9946 81.7923 25.523 83.7973 25.523C85.2357 25.523 86.5625 24.7313 87.1269 23.5153L91.1073 25.8903C89.751 28.4933 86.9584 30.1062 83.6562 30.1062ZM108.429 29.7663H102.501L97.8993 23.5702L97.1664 24.25V29.7663H92.2025V8.18234H97.1685V18.6767L101.852 14.1504H107.92L101.233 20.431L108.429 29.7663ZM108.762 21.647V8.86H114.067V21.5626C114.067 23.9101 115.422 25.0417 117.37 25.0417C119.288 25.0417 120.642 23.8531 120.642 21.5626V8.86H125.977V21.647C125.977 27.8136 121.714 30.1337 117.37 30.1337C113.052 30.1337 108.762 27.8136 108.762 21.647ZM137.767 13.7557C139.997 13.7557 141.804 14.5473 143.242 16.1307C144.681 17.6866 145.386 19.6393 145.386 21.9299C145.386 24.2226 144.653 26.1732 143.215 27.7861C141.774 29.3694 139.969 30.1632 137.796 30.1632C136.073 30.1632 134.578 29.5974 133.365 28.4659V36.1883H128.369V14.1504H133.281V15.5944C134.494 14.3763 135.989 13.7557 137.767 13.7557ZM140.306 21.9869C140.306 19.9497 138.841 18.3938 136.808 18.3938C134.776 18.3938 133.281 19.9497 133.281 21.9869C133.281 22.977 133.618 23.8257 134.268 24.5329C134.944 25.2401 135.791 25.58 136.808 25.58C137.823 25.58 138.67 25.2401 139.319 24.5329C139.966 23.8452 140.321 22.9322 140.309 21.9869H140.306Z"
-              fill="#000"></path>
-          </svg>
-        </a>
-
-        <div class="d-flex gap-3">
-          <a href="#/"
-            class="fw-bold px-3 py-2 rounded-3 text-dark text-decoration-none bg-body-secondary fs-16 shadow d-block d-xl-none shadow-hover">Login</a>
-
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-        <div class="collapse navbar-collapse justify-content-between pt-3 pt-xl-0" id="navbarNavDropdown">
-          <ul class="navbar-nav gap-3">
-            <li class="nav-item">
-              <a class="nav-link d-flex align-items-center justify-content-between gap-2 text-body-secondary fw-bold fs-16 position-relative primary-hover"
-                aria-current="page" href="#" onclick="dropDown()">Product <i
-                  class="fa-solid fa-chevron-down fs-10 fas"></i></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-body-secondary d-flex align-items-center justify-content-between gap-2 fw-bold fs-16 primary-hover"
-                href="#">Solution <i class="fa-solid fa-chevron-down fs-10"></i></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-body-secondary d-flex align-items-center justify-content-between gap-2 fw-bold fs-16 primary-hover"
-                href="#">Learn <i class="fa-solid fa-chevron-down fs-10"></i></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-body-secondary d-flex align-items-center justify-content-between gap-2 fw-bold fs-16 primary-hover"
-                href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-body-secondary d-flex align-items-center justify-content-between gap-2 fw-bold fs-16 primary-hover"
-                href="#">Enterprise</a>
-            </li>
-          </ul>
-          <ul
-            class="d-flex align-items-start gap-4 gap-xl-5 m-0 p-0 pt-4 pt-xl-0 align-items-center flex-column flex-xl-row nav-group-btn">
-            <a href="#/" class="fw-bold text-secondary text-decoration-none fs-16 primary-hover">Contact Sales</a>
-            <div class="d-flex align-items-center gap-3">
-              <a href="#/"
-                class="fw-bold text-white px-4 py-2 rounded-3 text-decoration-none bg-purple fs-16 shadow-lg text-center hover noshadow transition5s">Sign
-                Up</a>
-              <a href="#/"
-                class="fw-bold px-3 py-2 rounded-3 text-dark text-decoration-none bg-body-secondary fs-16 shadow d-none d-xl-block hover noshadow transition5s">Log
-                in</a>
-            </div>
-          </ul>
-        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
       </div>
-    </nav>
+      <div class="collapse navbar-collapse justify-content-between pt-3 pt-xl-0" id="navbarNavDropdown">
+        <ul class="navbar-nav gap-3">
+          <li class="nav-item">
+            <a class="nav-link d-flex align-items-center justify-content-between gap-2 text-body-secondary fw-bold fs-16 position-relative primary-hover"
+              aria-current="page" href="#" onclick="dropDown()">Product <i
+                class="fa-solid fa-chevron-down fs-10 fas"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-body-secondary d-flex align-items-center justify-content-between gap-2 fw-bold fs-16 primary-hover"
+              href="#">Solution <i class="fa-solid fa-chevron-down fs-10"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-body-secondary d-flex align-items-center justify-content-between gap-2 fw-bold fs-16 primary-hover"
+              href="#">Learn <i class="fa-solid fa-chevron-down fs-10"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-body-secondary d-flex align-items-center justify-content-between gap-2 fw-bold fs-16 primary-hover"
+              href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-body-secondary d-flex align-items-center justify-content-between gap-2 fw-bold fs-16 primary-hover"
+              href="#">Enterprise</a>
+          </li>
+        </ul>
+        <ul
+          class="d-flex align-items-start gap-4 gap-xl-5 m-0 p-0 pt-4 pt-xl-0 align-items-center flex-column flex-xl-row nav-group-btn">
+          <a href="#/" class="fw-bold text-secondary text-decoration-none fs-16 primary-hover">Contact Sales</a>
+          <div class="d-flex align-items-center gap-3">
+            <a href="#/"
+              class="fw-bold text-white px-4 py-2 rounded-3 text-decoration-none bg-purple fs-16 shadow-lg text-center hover noshadow transition5s">Sign
+              Up</a>
+            <a href="#/"
+              class="fw-bold px-3 py-2 rounded-3 text-dark text-decoration-none bg-body-secondary fs-16 shadow d-none d-xl-block hover noshadow transition5s">Log
+              in</a>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
   </div>
 
   <div class="container pt-100 hero-section">
@@ -193,9 +175,9 @@
 
   <div class="container pt-100 position-relative">
     <div thumbsSlider="" class="swiper mySwiper1 px-4 w-100 h-100">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide slider-svg d-flex align-items-center justify-content-center shadow">
-          <svg width="29" height="27" viewBox="0 0 29 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <div class="swiper-wrapper" >
+        <div class="swiper-slide slider-svg d-flex align-items-center justify-content-center shadow-lg">
+          <svg width="39" height="37" viewBox="0 0 29 27" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M22 21C20.7195 21 19.671 21.0221 18.8443 21.0512C17.2961 21.1059 16 21.9509 16 23.5C16 25.0512 17.2928 25.8998 18.8432 25.9522C19.6551 25.9797 20.6964 26 22 26C23.3036 26 24.3449 25.9797 25.1568 25.9522C26.7072 25.8998 28 25.0512 28 23.5C28 21.9509 26.7039 21.1059 25.1557 21.0512C24.329 21.0221 23.2805 21 22 21Z"
               stroke="#7F76B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -208,7 +190,7 @@
           </svg>
         </div>
         <div class="swiper-slide slider-svg d-flex align-items-center justify-content-center shadow">
-          <svg width="29" height="27" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg width="39" height="37" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M31.3414 16.15C31.3414 12.9593 31.2077 10.3543 31.0321 8.30902C30.7233 4.71314 28.0243 2.01416 24.4284 1.70536C22.3831 1.52972 19.7782 1.396 16.5875 1.396C13.3968 1.396 10.7918 1.52972 8.74652 1.70536C5.15064 2.01416 2.45166 4.71314 2.14286 8.30902C1.96722 10.3543 1.8335 12.9593 1.8335 16.15C1.8335 19.4688 1.97817 22.1538 2.16422 24.2346C2.47406 27.7 5.03436 30.2969 8.50083 30.5949C10.5418 30.7704 13.2059 30.9039 16.5875 30.9039C19.969 30.9039 22.6331 30.7704 24.6741 30.5949C28.1406 30.2969 30.7009 27.7 31.0107 24.2346C31.1968 22.1538 31.3414 19.4688 31.3414 16.15Z"
               stroke="#7F76B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -221,7 +203,7 @@
           </svg>
         </div>
         <div class="swiper-slide slider-svg d-flex align-items-center justify-content-center shadow">
-          <svg width="29" height="27" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg width="39" height="37" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M33.9223 13.9318L33.9328 13.9561L33.9446 13.9798C36.1982 18.5153 35.8991 22.2091 34.2276 25.1611C32.5213 28.1746 29.3022 30.5579 25.4658 32.214C17.9693 35.45 9.33798 32.7623 6.34237 25.8373C3.37294 18.9729 7.53683 11.5301 15.1048 8.26324C22.6728 4.99635 30.9529 7.06745 33.9223 13.9318ZM9.98537 25.0507C11.1218 27.6778 13.7505 28.9047 16.3522 29.3011C18.967 29.6994 21.821 29.3119 23.8344 28.4428C25.9231 27.5411 27.3157 25.971 27.8821 23.9737C28.4406 22.0044 28.1678 19.7274 27.1632 17.4049C26.16 15.0858 24.6027 13.1254 22.736 11.9532C20.8496 10.7686 18.618 10.382 16.4302 11.3264C14.3259 12.2348 12.2297 14.4534 10.9039 16.9415C9.58264 19.4213 8.86987 22.472 9.98537 25.0507Z"
               fill="url(#paint0_linear_5349_140949)" stroke="#7F76B3" stroke-width="2"></path>
@@ -246,7 +228,7 @@
           </svg>
         </div>
         <div class="swiper-slide slider-svg d-flex align-items-center justify-content-center shadow">
-          <svg width="29" height="27" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg width="39" height="37" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M30.6032 15.8506C30.6032 19.1695 30.4585 21.8545 30.2724 23.9353C29.9626 27.4007 27.4023 29.9976 23.9358 30.2956C21.8948 30.4711 19.2307 30.6046 15.8492 30.6046C12.4676 30.6046 9.80354 30.4711 7.76255 30.2956C4.29608 29.9976 1.73578 27.4007 1.42593 23.9353C1.23989 21.8545 1.09521 19.1695 1.09521 15.8506C1.09521 12.6599 1.22894 10.055 1.40458 8.0097C1.71338 4.41382 4.41236 1.71484 8.00824 1.40604C10.0536 1.2304 12.6585 1.09668 15.8492 1.09668"
               stroke="#7b73ae" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -256,7 +238,7 @@
           </svg>
         </div>
         <div class="swiper-slide slider-svg d-flex align-items-center justify-content-center shadow">
-          <svg width="29" height="27" viewBox="0 0 33 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg width="39" height="37" viewBox="0 0 33 25" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M31.4283 12.4981C31.4283 10.834 31.3602 9.38804 31.2574 8.15311C30.9641 4.63108 28.1543 2.17497 24.6273 1.94948C22.5654 1.81765 19.9236 1.71631 16.6744 1.71631C13.4251 1.71631 10.7834 1.81765 8.72146 1.94948C5.19444 2.17497 2.38467 4.63108 2.09136 8.15311C1.98852 9.38804 1.92041 10.834 1.92041 12.4981C1.92041 14.244 1.99538 15.7498 2.10679 17.0238C2.40615 20.4469 5.10998 22.8336 8.53926 23.0509C10.5865 23.1807 13.266 23.2798 16.6744 23.2798C20.0828 23.2798 22.7623 23.1807 24.8095 23.0509C28.2388 22.8336 30.9426 20.4469 31.242 17.0238C31.3534 15.7498 31.4283 14.244 31.4283 12.4981Z"
               fill="#7F76B3" fill-opacity="0.1" stroke="#7F76B3" stroke-width="2" stroke-linecap="round"
@@ -268,7 +250,7 @@
           </svg>
         </div>
         <div class="swiper-slide slider-svg d-flex align-items-center justify-content-center shadow">
-          <svg width="29" height="27" viewBox="0 0 33 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg width="39" height="37" viewBox="0 0 33 34" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M14.147 4.57874L14.147 19.9002L24.645 28.6958C24.645 28.6958 32.3057 21.0685 27.766 12.5232C22.9426 3.44382 14.147 4.57874 14.147 4.57874Z"
               fill="#7F76B3" fill-opacity="0.1"></path>
@@ -286,7 +268,7 @@
           </svg>
         </div>
         <div class="swiper-slide slider-svg d-flex align-items-center justify-content-center shadow">
-          <svg width="29" height="27" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg width="39" height="37" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M15.8492 25.435C23.9976 25.435 30.6031 20.0146 30.6031 13.3281C30.6031 6.64164 23.9976 1.22119 15.8492 1.22119C7.70079 1.22119 1.09521 6.64164 1.09521 13.3281C1.09521 16.4289 2.51579 19.2574 4.85203 21.3994C7.18828 23.5413 5.35117 30.7291 5.35117 30.7291L8.44736 27.8657C10.4359 26.0267 13.1406 25.435 15.8492 25.435Z"
               fill="#7F76B3" fill-opacity="0.1" stroke="#7F76B3" stroke-width="2" stroke-linecap="round"
@@ -298,7 +280,7 @@
           </svg>
         </div>
         <div class="swiper-slide slider-svg d-flex align-items-center justify-content-center shadow">
-          <svg width="29" height="27" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg width="39" height="37" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M28.6168 1.51904L30.8867 4.64007L23.7934 23.3663L16.9839 20.8127L24.9283 1.80277L28.6168 1.51904Z"
               fill="#7F76B3" fill-opacity="0.1"></path>
             <path
@@ -327,7 +309,7 @@
         </div>
       </div>
     </div>
-    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+    <div style="box-shadow: sha;"
       class="swiper mySwiper2 pt-4 w-100 h-100">
       <div class="swiper-wrapper pb-5 hero-wrapper">
         <div class="swiper-slide position-relative parent-image-div px-4">
@@ -390,19 +372,20 @@
             <div thumbsSlider="" class="swiper mySwiper3 d-flex flex-column w-100" style="overflow: auto">
               <div
                 class="swiper-wrapper d-flex flex-column align-items-start justify-content-center gap-4 w-100 h-100 pt-4">
+                
                 <div class="swiper-slide w-100">
                   <div class="accordion-slider px-5" id="accordionPanelsStayOpenExample1">
-                    <div class="accordion-item">
+                    <div class="accordion-item accordionjs">
                       <h2 class="accordion-header" style="width: fit-content">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                          data-bs-target="#accordion-1" aria-expanded="true" aria-controls="accordion-1"
-                          data-bs-parent="#accordionPanelsStayOpenExample1">
+                        <button class="accordion-button" type="button" data-toggle="collapse"
+                          data-target="#accordion-1" aria-expanded="true" aria-controls="accordion-1"
+                          data-parent="#accordionPanelsStayOpenExample1">
                           <h1 class="fw-900 accordion-heading">
                             Improve collaboration
                           </h1>
                         </button>
                       </h2>
-                      <div id="accordion-1" class="accordion-collapse collapse show">
+                      <div id="accordion-1" class="accordion-content show collapse">
                         <div class="accordion-body pt-2">
                           <p class="fs-20 text-dark">
                             <strong>Get your teams working together more closely,
@@ -433,7 +416,7 @@
 
                 <div class="swiper-slide w-100">
                   <div class="accordion-slider px-5" id="accordionPanelsStayOpenExample2">
-                    <div class="accordion-item">
+                    <div class="accordion-item accordionjs">
                       <h2 class="accordion-header" style="width: fit-content">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse"
                           data-bs-target="#accordion-2" aria-expanded="true" aria-controls="accordion-2"
@@ -472,46 +455,48 @@
                   </div>
                 </div>
 
-                <div class="swiper-slide w-100">
-                  <div class="accordion-slider px-5" id="accordionPanelsStayOpenExample3">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" style="width: fit-content">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                          data-bs-target="#accordion-3" aria-expanded="true" aria-controls="accordion-3"
-                          data-bs-parent="#accordionPanelsStayOpenExample3">
-                          <h1 class="fw-900 accordion-heading">
-                            Automate work
-                          </h1>
-                        </button>
-                      </h2>
-                      <div id="accordion-3" class="accordion-collapse collapse">
-                        <div class="accordion-body pt-2">
-                          <p class="fs-20 text-dark">
-                            <strong>Get your teams working together more closely,
-                              even if they’re far apart.</strong>
-                            Centralize project-related communications in one
-                            place, brainstorm ideas with Whiteboards, and
-                            draft plans together with collaborative Docs.
-                          </p>
-                          <div class="d-flex align-items-center gap-2 pt-3 text-dark">
-                            <div class="border border-2 px-3 py-1 rounded-3">
-                              Comments
-                            </div>
-                            <div class="border border-2 px-3 py-1 rounded-3">
-                              Docs
-                            </div>
-                            <div class="border border-2 px-3 py-1 rounded-3">
-                              Whiteboards
-                            </div>
-                            <div class="border border-2 px-3 py-1 rounded-3">
-                              Clips
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+           
+  <div class="swiper-slide w-100">
+    <div class="accordion-slider px-5" id="accordionPanelsStayOpenExample3">
+      <div class="accordion-item accordionjs">
+        <h2 class="accordion-header" style="width: fit-content">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse"
+            data-bs-target="#accordion-3" aria-expanded="true" aria-controls="accordion-3"
+            data-bs-parent="#accordionPanelsStayOpenExample3">
+            <h1 class="fw-900 accordion-heading">
+              Automate work
+            </h1>
+          </button>
+        </h2>
+        <div id="accordion-3" class="accordionjs collapse">
+          <div class="accordion-body pt-2">
+            <p class="fs-20 text-dark">
+              <strong>Get your teams working together more closely,
+                even if they’re far apart.</strong>
+              Centralize project-related communications in one
+              place, brainstorm ideas with Whiteboards, and
+              draft plans together with collaborative Docs.
+            </p>
+            <div class="d-flex align-items-center gap-2 pt-3 text-dark">
+              <div class="border border-2 px-3 py-1 rounded-3">
+                Comments
+              </div>
+              <div class="border border-2 px-3 py-1 rounded-3">
+                Docs
+              </div>
+              <div class="border border-2 px-3 py-1 rounded-3">
+                Whiteboards
+              </div>
+              <div class="border border-2 px-3 py-1 rounded-3">
+                Clips
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
               </div>
             </div>
           </div>
@@ -559,9 +544,10 @@
           </p>
         </div>
       </div>
-      <div class="row pt-5 ">
-        <div class="swiper mySwiper">
+      <!-- <div class="row pt-5 ">
+        <div class="swiper mySwiperSuperCharge">
           <div class="swiper-wrapper">
+            
             <div class="swiper-slide swiper-responsive-slide px-4 py-4 rounded-4">
               <div class="d-flex flex-column gap-1 justify-content-center">
                 <h4 class="text-white fw-bold">Improve collaboration</h4>
@@ -589,6 +575,7 @@
                 </div>
               </div>
             </div>
+
             <div class="swiper-slide swiper-responsive-slide px-4 py-4 rounded-4">
               <div class="d-flex flex-column gap-1 justify-content-center">
                 <h4 class="text-white fw-bold">Improve collaboration</h4>
@@ -616,6 +603,7 @@
                 </div>
               </div>
             </div>
+
             <div class="swiper-slide swiper-responsive-slide px-4 py-4 rounded-4">
               <div class="d-flex flex-column gap-1 justify-content-center">
                 <h4 class="text-white fw-bold">Improve collaboration</h4>
@@ -643,6 +631,92 @@
                 </div>
               </div>
             </div>
+            
+          </div>
+        </div>
+      </div> -->
+      <div class="row pt-5">
+        <div class="swiper mySwiperSuperCharge">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide swiper-responsive-slide px-4 py-4 rounded-4">
+              <div class="d-flex flex-column gap-1 justify-content-center">
+                <h4 class="text-white fw-bold">Improve collaboration</h4>
+                <p class="fs-16 text-white fw-semibold">
+                  <strong>Get your teams working together more closely, even if they’re far apart.</strong>
+                  Centralize project-related communications in one place, brainstorm ideas with Whiteboards,
+                  and draft plans together with collaborative Docs.
+                </p>
+                <div class="d-flex align-items-center gap-2 pt-3 text-dark flex-wrap">
+                  <div class="border border-2 px-3 py-1 rounded-3 text-dark bg-white">
+                    Comments
+                  </div>
+                  <div class="border border-2 px-3 py-1 rounded-3 text-dark bg-white">
+                    Docs
+                  </div>
+                  <div class="border border-2 px-3 py-1 rounded-3 text-dark bg-white">
+                    Whiteboards
+                  </div>
+                  <div class="border border-2 px-3 py-1 rounded-3 text-dark bg-white">
+                    Clips
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="swiper-slide swiper-responsive-slide px-4 py-4 rounded-4">
+              <div class="d-flex flex-column gap-1 justify-content-center">
+                <h4 class="text-white fw-bold">Improve collaboration</h4>
+                <p class="fs-16 text-white fw-semibold">
+                  <strong>Get your teams working together more closely, even if they’re far apart.</strong>
+                  Centralize project-related communications in one place, brainstorm ideas with Whiteboards,
+                  and draft plans together with collaborative Docs.
+                </p>
+                <div class="d-flex align-items-center gap-2 pt-3 text-dark flex-wrap">
+                  <div class="border border-2 px-3 py-1 rounded-3 text-dark bg-white">
+                    Comments
+                  </div>
+                  <div class="border border-2 px-3 py-1 rounded-3 text-dark bg-white">
+                    Docs
+                  </div>
+                  <div class="border border-2 px-3 py-1 rounded-3 text-dark bg-white">
+                    Whiteboards
+                  </div>
+                  <div class="border border-2 px-3 py-1 rounded-3 text-dark bg-white">
+                    Clips
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="swiper-slide swiper-responsive-slide px-4 py-4 rounded-4">
+              <div class="d-flex flex-column gap-1 justify-content-center">
+                <h4 class="text-white fw-bold">Improve collaboration</h4>
+                <p class="fs-16 text-white fw-semibold">
+                  <strong>Get your teams working together more closely, even if they’re far apart.</strong>
+                  Centralize project-related communications in one place, brainstorm ideas with Whiteboards,
+                  and draft plans together with collaborative Docs.
+                </p>
+                <div class="d-flex align-items-center gap-2 pt-3 text-dark flex-wrap">
+                  <div class="border border-2 px-3 py-1 rounded-3 text-dark bg-white">
+                    Comments
+                  </div>
+                  <div class="border border-2 px-3 py-1 rounded-3 text-dark bg-white">
+                    Docs
+                  </div>
+                  <div class="border border-2 px-3 py-1 rounded-3 text-dark bg-white">
+                    Whiteboards
+                  </div>
+                  <div class="border border-2 px-3 py-1 rounded-3 text-dark bg-white">
+                    Clips
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
           </div>
         </div>
       </div>
@@ -898,7 +972,7 @@
         <ul class="nav nav-pills mb-3 justify-content-center gap-4" id="pills-tab" role="tablist">
           <li class="nav-item" role="presentation">
             <button
-              class="nav-link nav-links-tabs active fw-semibold text-body-secondary d-flex flex-column align-items-center gap-2 py-4 text-center"
+              class="nav-link rounded-4 nav-links-tabs active fw-semibold text-body-secondary d-flex flex-column align-items-center gap-2 py-4 text-center"
               id="pills-pmo-tab" data-bs-toggle="pill" data-bs-target="#pills-pmo" type="button" role="tab"
               aria-controls="pills-home" aria-selected="true">
               <svg width="30" height="30" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -927,7 +1001,7 @@
           </li>
           <li class="nav-item" role="presentation">
             <button
-              class="nav-link nav-links-tabs fw-semibold text-secondary d-flex flex-column align-items-center gap-2 py-4 text-center"
+              class="nav-link rounded-4 nav-links-tabs fw-semibold text-secondary d-flex flex-column align-items-center gap-2 py-4 text-center"
               id="pills-engineering-tab" data-bs-toggle="pill" data-bs-target="#pills-marketing" type="button"
               role="tab" aria-controls="pills-profile" aria-selected="false">
               <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -947,7 +1021,7 @@
           </li>
           <li class="nav-item" role="presentation">
             <button
-              class="nav-link nav-links-tabs fw-semibold text-secondary d-flex flex-column align-items-center gap-2 py-4 text-center"
+              class="nav-link rounded-4 nav-links-tabs fw-semibold text-secondary d-flex flex-column align-items-center gap-2 py-4 text-center"
               id="pills-product-tab" data-bs-toggle="pill" data-bs-target="#pills-product" type="button" role="tab"
               aria-controls="pills-contact" aria-selected="false">
               <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -967,7 +1041,7 @@
           </li>
           <li class="nav-item" role="presentation">
             <button
-              class="nav-link nav-links-tabs fw-semibold text-secondary d-flex flex-column align-items-center gap-2 py-4 text-center"
+              class="nav-link rounded-4 nav-links-tabs fw-semibold text-secondary d-flex flex-column align-items-center gap-2 py-4 text-center"
               id="pills-marketing-tab" data-bs-toggle="pill" data-bs-target="#pills-engineering" type="button"
               role="tab" aria-controls="pills-disabled" aria-selected="false">
               <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -991,7 +1065,7 @@
           </li>
           <li class="nav-item" role="presentation">
             <button
-              class="nav-link nav-links-tabs fw-semibold text-secondary d-flex flex-column align-items-center gap-2 py-4 text-center"
+              class="nav-link rounded-4 nav-links-tabs fw-semibold text-secondary d-flex flex-column align-items-center gap-2 py-4 text-center"
               id="pills-agencies-tab" data-bs-toggle="pill" data-bs-target="#pills-agencies" type="button" role="tab"
               aria-controls="pills-disabled" aria-selected="false">
               <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1047,19 +1121,19 @@
                     solution.
                   </p>
                   <div class="d-flex flex-column gap-2">
-                    <p class="d-flex align-items-center gap-3 text-body-secondary fw-medium">
-                      <i class="fa-solid fa-check bg-body-secondary border border-dark border-2 rounded-circle"
-                        style="padding: 3px; font-size: 12px"></i>
+                    <p class="d-flex align-items-center gap-3 text-darkfw-medium">
+                      <i class="fa-solid fa-check bg-body-secondary text-dark rounded-circle border border-dark border-2  "
+                        style="padding:3px; font-size: 10px;"></i>
                       Reduce delivery time with a custom template
                     </p>
-                    <p class="d-flex align-items-center gap-3 text-body-secondary fw-medium">
-                      <i class="fa-solid fa-check bg-body-secondary border border-dark border-2 rounded-circle"
-                        style="padding: 3px; font-size: 12px"></i>
+                    <p class="d-flex align-items-center gap-3 text-dark fw-medium">
+                      <i class="fa-solid fa-check bg-body-secondary text-dark rounded-circle border border-dark border-2  "
+                        style="padding:3px; font-size: 10px;"></i>
                       Track effort to impact with OKR planning
                     </p>
-                    <p class="d-flex align-items-center gap-3 text-body-secondary fw-medium">
-                      <i class="fa-solid fa-check bg-body-secondary border border-dark border-2 rounded-circle"
-                        style="padding: 3px; font-size: 12px"></i>
+                    <p class="d-flex align-items-center gap-3 text-dark fw-medium">
+                      <i class="fa-solid fa-check bg-body-secondary text-dark rounded-circle border border-dark border-2  "
+                        style="padding:3px; font-size: 10px;"></i>
                       Manage complex projects at scale
                     </p>
                   </div>
@@ -2243,7 +2317,7 @@
     <div class="row w-100 d-contents">
       <div class="col-12 col-md-6 col-xl-4">
         <div class="ai-powered-card rounded-4 d-flex flex-column gap-3 py-2 position-relative ">
-          <div class=" mx-4 py-3">
+          <div class=" mx-4 py-3 px-2">
             <h4 class="text-light fw-bold">AI-powered productivity</h4>
             <p class="text-light fw-medium fs-6">
               Get work done faster with the only AI-powered assistant tailored
@@ -2258,12 +2332,12 @@
 
       <div class="col-12 col-md-6 col-xl-4 pt-4 pt-md-0 ">
         <div class="view-work-card rounded-4 d-flex flex-column gap-3 ">
-          <div class=" px-3 py-4">
+          <div class=" py-4 ps-4 ">
             <h4 class="text-light fw-bold">View work your way</h4>
             <p class="text-light fw-medium">Instantly switch between 15 views including list, board, gantt, and more.
             </p>
           </div>
-          <div class=" ps-3 position-relative ">
+          <div class=" ps-3  position-relative ">
             <img src="view-work-your-way.png" alt="" class="w-100 h-100 ">
           </div>
         </div>
@@ -2271,7 +2345,7 @@
 
       <div class="col-12 col-lg-4 pt-4 pt-lg-0 d-block d-md-none d-xl-block ">
         <div class="customize-div rounded-4 h-100 d-flex flex-column gap-3">
-          <div class="px-3 py-4 ">
+          <div class="ps-4 py-4 ">
             <h4 class="text-light fw-bold">Customize in a click</h4>
             <p class="text-light fw-medium">Configuring ClickUp for different types of work is as easy as flipping a
               switch.</p>
@@ -2367,9 +2441,7 @@
             </div>
           </div>
         </div>
-
       </div>
-
     </div>
 
     <div class="row pt-4 w-100 d-contents">
@@ -2379,8 +2451,8 @@
           <div class="row">
             <div class="col-6">
               <div class="d-flex flex-column gap-2">
-                <div class="d-flex flex-column gap-2">
-                  <h4 class="text-light fw-bold m-0">Plays well with others </h4>
+                <div class="d-flex flex-column gap-2 ">
+                  <h4 class="text-light fw-bold m-0 ">Plays well with others </h4>
                   <p class="text-light fw-medium pe-5">Easily integrates with the <span
                       class="d-none d-lg-block"></span>
                     tools you already use.</p>
@@ -2408,7 +2480,7 @@
 
       <div class="col-12 col-md-6 col-xl-4  pt-4 pt-xl-0 ">
         <div class="bg-dark d-flex flex-column gap-4 pt-4 rounded-4 overflow-hidden ">
-          <div class="px-4">
+          <div class="ps-4">
             <h4 class="text-white fw-bold">Search Everything</h4>
             <p class="text-white">Find any file in ClickUp, a connected <span class="d-none d-lg-block"></span> app, or
               your local drive, from one place.</p>
@@ -2421,12 +2493,12 @@
 
       <div class="col-12 col-md-6 col-xl-4 pt-4">
         <div class="stay-ahead-div pt-4 d-flex flex-column gap-3  overflow-hidden rounded-4 ">
-          <div class="d-flex flex-column gap-2 px-3">
+          <div class="d-flex flex-column gap-2 ps-4 ms-2 ">
             <h4 class="fw-bold text-white m-0">Stay ahead of what's next</h4>
             <p class="fw-medium text-white">Organize your work, reminders, and <span class="d-none d-lg-block"></span>
               calender events all from your <span class="d-none d-lg-block"></span> personalize Home. </p>
           </div>
-          <div class=" ps-2">
+          <div class=" ps-4 position-relative">
             <img src="stay-ahead.png" alt="" class="w-100 h-100">
           </div>
         </div>
@@ -2466,7 +2538,8 @@
               </div>
             </div>
             <div class="col-5 position-relative ">
-              <img src="teams-worldwide-planet.png" alt="">
+              <img src="space-stars.svg" alt="" class=" position-absolute space-star-glob">
+              <img src="teams-worldwide-planet.png" alt="" class="">
             </div>
           </div>
         </div>
@@ -2662,60 +2735,45 @@
               </div>
             </div>
             <div class="d-flex align-items-center gap-3 ">
-              <div class=""><i class="footer-brands-btn fa-brands fa-linkedin text-light "></i></div>
-              <div class=""><i class="footer-brands-btn fa-brands fa-facebook text-light "></i></div>
-              <div class=""><i class="footer-brands-btn fa-brands fa-instagram text-light"></i></div>
-              <div class=""><i class="footer-brands-btn fa-brands fa-twitter text-light  "></i></div>
+              <a href="#/"><i class="footer-brands-btn fa-brands fa-facebook text-light "></i></a>
+              <a href="#/"><i class="footer-brands-btn fa-brands fa-instagram text-light"></i></a>
+              <a href="#/"><i class="footer-brands-btn fa-brands fa-twitter text-light  "></i></a>
             </div>
           </div>
         </div>
       </div>
-
     </div>
-
-
-    <!-- 
-
-  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /> -->
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="index.js"></script>
 <script>
 
-  var swiper = new Swiper(".mySwiperPerfectFit", {
-    slidesPerView: 1.2,
-    spaceBetween: 5,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  });
+var cardSliderView;
+function cardSliderTeam() {
+if (window.innerWidth <= 500) {
+cardSliderView = 1.1;
+} else if (window.innerWidth <= 800) {
+cardSliderView = 1.7;
+} else if (window.innerWidth <= 990) {
+cardSliderView = 2.5;
+} else {
+cardSliderView = 3;
+}
+var swiper = new Swiper(".mySwiperTeam", {
+slidesPerView: cardSliderView,
+spaceBetween: 30,
+pagination: {
+  el: ".swiper-pagination",
+  clickable: true,
+},
+});
+}
+cardSliderTeam();
+window.addEventListener("resize", function () {
+cardSliderTeam();
+});
 
-  var cardSliderView;
-  function cardSliderTeam() {
-    if (window.innerWidth <= 500) {
-      cardSliderView = 1.1;
-    } else if (window.innerWidth <= 800) {
-      cardSliderView = 1.7;
-    } else if (window.innerWidth <= 990) {
-      cardSliderView = 2.5;
-    } else {
-      cardSliderView = 3;
-    }
-    var swiper = new Swiper(".mySwiperTeam", {
-      slidesPerView: cardSliderView,
-      spaceBetween: 30,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
-  }
-  cardSliderTeam();
-  window.addEventListener("resize", function () {
-    cardSliderTeam();
-  });
+
 </script>
 
 </html>
