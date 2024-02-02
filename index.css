@@ -469,9 +469,6 @@ p {
   width: fit-content;
 }
 
-.d-contents{
-  display: contents;
-}
 
 .footer-btn-apple img {
 max-width: 120px;
@@ -549,6 +546,11 @@ justify-content: space-between!important;
   justify-content: start !important;
   /* flex-direction: column; */
 }
+
+.d-contents{
+  display: contents;
+}
+
 
 .footer-bg{
   clip-path: none;
