@@ -520,6 +520,20 @@ p {
         rgba(137, 32, 254, 0.81) 48.2%,
         #ff0be5 94.81%);
   }
+
+  .slider-svg{
+    width: 100% !important;
+    max-width: 100px;
+  }
+
+  .mySwiper1 .slider-svg {
+    padding: 25px 5px 25px 5px;
+  }
+
+  .slider-svg svg{
+    width: 30px;
+  }
+
 }
 
 @media screen and (max-width: 769px) {
@@ -584,6 +598,20 @@ p {
     width: 50px;
     height: 50px;
   }
+
+  .slider-svg{
+    width: 100% !important;
+    max-width: 80px;
+  }
+
+  .mySwiper1 .slider-svg {
+    padding: 20px 5px 20px 5px;
+  }
+
+  .slider-svg svg{
+    width: 23px;
+  }
+
 
   .footer {
     flex-direction: column;

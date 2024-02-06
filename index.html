@@ -544,8 +544,8 @@
           </p>
         </div>
       </div>
-      <!-- <div class="row pt-5 ">
-        <div class="swiper mySwiperSuperCharge">
+
+        <div class="swiper mySwiperSuperCharge pt-4">
           <div class="swiper-wrapper">
             
             <div class="swiper-slide swiper-responsive-slide px-4 py-4 rounded-4">
@@ -634,92 +634,8 @@
             
           </div>
         </div>
-      </div> -->
-      <div class="row pt-5">
-        <div class="swiper mySwiperSuperCharge">
-          <div class="swiper-wrapper">
+      </div> 
 
-            <div class="swiper-slide swiper-responsive-slide px-4 py-4 rounded-4">
-              <div class="d-flex flex-column gap-1 justify-content-center">
-                <h4 class="text-white fw-bold">Improve collaboration</h4>
-                <p class="fs-16 text-white fw-semibold">
-                  <strong>Get your teams working together more closely, even if they’re far apart.</strong>
-                  Centralize project-related communications in one place, brainstorm ideas with Whiteboards,
-                  and draft plans together with collaborative Docs.
-                </p>
-                <div class="d-flex align-items-center gap-2 pt-3 text-dark flex-wrap">
-                  <div class="border border-2 px-3 py-1 rounded-3 text-dark bg-white">
-                    Comments
-                  </div>
-                  <div class="border border-2 px-3 py-1 rounded-3 text-dark bg-white">
-                    Docs
-                  </div>
-                  <div class="border border-2 px-3 py-1 rounded-3 text-dark bg-white">
-                    Whiteboards
-                  </div>
-                  <div class="border border-2 px-3 py-1 rounded-3 text-dark bg-white">
-                    Clips
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="swiper-slide swiper-responsive-slide px-4 py-4 rounded-4">
-              <div class="d-flex flex-column gap-1 justify-content-center">
-                <h4 class="text-white fw-bold">Improve collaboration</h4>
-                <p class="fs-16 text-white fw-semibold">
-                  <strong>Get your teams working together more closely, even if they’re far apart.</strong>
-                  Centralize project-related communications in one place, brainstorm ideas with Whiteboards,
-                  and draft plans together with collaborative Docs.
-                </p>
-                <div class="d-flex align-items-center gap-2 pt-3 text-dark flex-wrap">
-                  <div class="border border-2 px-3 py-1 rounded-3 text-dark bg-white">
-                    Comments
-                  </div>
-                  <div class="border border-2 px-3 py-1 rounded-3 text-dark bg-white">
-                    Docs
-                  </div>
-                  <div class="border border-2 px-3 py-1 rounded-3 text-dark bg-white">
-                    Whiteboards
-                  </div>
-                  <div class="border border-2 px-3 py-1 rounded-3 text-dark bg-white">
-                    Clips
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="swiper-slide swiper-responsive-slide px-4 py-4 rounded-4">
-              <div class="d-flex flex-column gap-1 justify-content-center">
-                <h4 class="text-white fw-bold">Improve collaboration</h4>
-                <p class="fs-16 text-white fw-semibold">
-                  <strong>Get your teams working together more closely, even if they’re far apart.</strong>
-                  Centralize project-related communications in one place, brainstorm ideas with Whiteboards,
-                  and draft plans together with collaborative Docs.
-                </p>
-                <div class="d-flex align-items-center gap-2 pt-3 text-dark flex-wrap">
-                  <div class="border border-2 px-3 py-1 rounded-3 text-dark bg-white">
-                    Comments
-                  </div>
-                  <div class="border border-2 px-3 py-1 rounded-3 text-dark bg-white">
-                    Docs
-                  </div>
-                  <div class="border border-2 px-3 py-1 rounded-3 text-dark bg-white">
-                    Whiteboards
-                  </div>
-                  <div class="border border-2 px-3 py-1 rounded-3 text-dark bg-white">
-                    Clips
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 
@@ -2773,11 +2689,28 @@ window.addEventListener("resize", function () {
 cardSliderTeam();
 });
 
-var mySwiper = new Swiper('.mySwiperSuperCharge', {
-  slidesPerView: 1.1,
-  spaceBetween: 10,
-  // Add other Swiper options as needed
+var cardSliderViewSuperCharge;
+function cardSliderSuperCharge() {
+  if (window.innerWidth <= 500) {
+    cardSliderViewSuperCharge = 1.1;
+  } else if (window.innerWidth <= 800) {
+    cardSliderViewSuperCharge = 1.7;
+  } else if (window.innerWidth <= 990) {
+    cardSliderViewSuperCharge = 2.1;
+  } else {
+    cardSliderViewSuperCharge = 3;
+  }
+  var mySwiper = new Swiper('.mySwiperSuperCharge', {
+    slidesPerView: cardSliderViewSuperCharge,
+    spaceBetween: 20,
+  });
+}
+cardSliderSuperCharge();
+window.addEventListener("resize", function () {
+  cardSliderSuperCharge();
 });
+
+
 
 var swiper = new Swiper(".mySwiperPerfectFit", {
 slidesPerView: 1.2,
